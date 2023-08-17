@@ -1,0 +1,7 @@
+[
+  {
+    "project": "test-project",
+    "subscription": "test-subscription",
+    "action": "ack_all_messages"
+  }
+]

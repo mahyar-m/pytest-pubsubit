@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pub-sub:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    environment:
+      PUBSUB_EMULATOR_HOST: 0.0.0.0:8085
+      PUBSUB_PROJECT_ID: test-project
+    ports:
+      - 8085:8085
